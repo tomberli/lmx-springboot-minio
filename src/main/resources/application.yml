@@ -1,0 +1,14 @@
+server:
+  port: 9001
+spring:
+  servlet:
+    multipart:
+      enabled: true #开启文件上传
+      max-file-size: 500MB
+      max-request-size: 500MB
+
+minio:
+  endpoint: http://39.106.76.79:9000 #Minio服务所在地址
+  bucketName: lmx #存储桶名称
+  accessKey: admin #访问的key
+  secretKey: admin123 #访问的秘钥
